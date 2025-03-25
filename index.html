@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,4 +20,90 @@
 
     
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align:center;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Cell that spans two columns</h2>
+    <p>To make a cell span more than one column, use the colspan attribute.</p>
+
+    <table style="width:100%">
+        <tr style="background-color: #D3D3D3">
+            <th rowspan="2" >Employee ID</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2" rowspan="1.5">Department</th>
+            <th colspan="3">Performance</th>
+
+        </tr>
+        <tr style="background-color: #D3D3D3">
+            <th>Team</th>
+            <th>Role</th>
+            <th>2022</th>
+            <th>2023</th>
+            <th>2024</th>
+
+        </tr>
+        <tr>
+            <td rowspan="2">101</td>
+            <td rowspan="2">Alice</td>
+            <td rowspan="2">Developement</td>
+            <td rowspan="2">Frontend Engineer</td>
+            <td rowspan="1">4.5</td>
+            <td rowspan="1">4.7</td>
+            <td rowspan="1">4.8</td>
+
+
+        </tr>
+
+       <tr>
+            <td colspan="4">
+                <table style="width:100%">
+                    <tr>
+                        <th colspan="2">Project</th>
+                        <th>Rating</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Website Redesign</td>
+                        <td>5.0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">App UI</td>
+                        <td>4.8</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Bob</td>
+            <td>Marketing</td>
+            <td>SEO Specialist</td>
+            <td>4.2</td>
+            <td>4.3</td>
+            <td>4.5</td>
+        </tr>
+        <tr>
+            <td colspan="7">End of Employee Records</td>
+
+        </tr>
+    </table>
+</body>
+
 </html>
